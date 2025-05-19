@@ -11,7 +11,7 @@ permissions:
   packages: write
 
 env:
-  IMAGE_NAME: gabrielagg07/searchID-books
+  IMAGE_NAME: gabrielagg07/searchid-books
 
 jobs:
 
@@ -166,5 +166,5 @@ jobs:
           context: .
           push: true
           tags: |
-            gabrielagg07/searchID-books:${{ needs.release.outputs.version }}
-            ghcr.io/${{ github.repository_owner }}/searchID-books:${{ needs.release.outputs.version }}
+            gabrielagg07/searchid-books:${{ needs.release.outputs.version }}
+            ghcr.io/${{ github.repository_owner }}/searchid-books:${{ needs.release.outputs.version }}
